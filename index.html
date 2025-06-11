@@ -15,6 +15,9 @@
       --largura-pagina: 75rem;
       --fonte-principal: 'Inter', sans-serif;
       --tamanho-base: 1rem;
+      /* paddings globais dos containers */
+      --padding-lateral-mobile: 1rem;
+      --padding-lateral-md: 1.5rem;
     }
     body{
       width: 100%;
@@ -22,6 +25,7 @@
       margin: 0 auto;
       font-family: var(--fonte-principal);
       font-size: var(--tamanho-base);
+      scroll-behavior: smooth;
     }
   </style>
 </head>
@@ -29,7 +33,7 @@
 
   <!-- ================= HEADER =================== -->
   <header class="w-screen" style="background: #7A8AD6; color: #333333;">
-    <div class="max-w-[var(--largura-pagina)] mx-auto px-4 md:px-6 py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-items-start">
+    <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-items-start">
       <!-- Coluna 1: Logo -->
       <div>
         <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="Logo Quantec Portal" class="h-12">
@@ -42,10 +46,8 @@
         </nav>
         <a href="tel:21979658483" class="hidden md:inline-block text-sm">(21) 97965-8483</a>
         <button class="md:hidden" id="navToggle" aria-label="Abrir menu">
-          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none"
-               viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                  d="M4 6h16M4 12h16M4 18h16"/>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
@@ -54,7 +56,7 @@
 
   <!-- ================= HERO =================== -->
   <section id="sec-hero" class="w-screen" style="background: #7A8AD6; color: #333333;">
-    <div class="max-w-[var(--largura-pagina)] mx-auto px-4 md:px-6 flex flex-col md:flex-row items-center gap-12 md:gap-16 py-12 md:py-16">
+    <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] flex flex-col md:flex-row items-center gap-12 md:gap-16 py-12 md:py-16">
       <div class="flex-1 min-w-0">
         <h1 class="text-[2.5rem] font-bold mb-6 leading-[1.2] tracking-tight font-inter">Medicina Quântica Segura Com Tecnologia de Ponta</h1>
         <p class="text-[1.25rem] font-semibold mb-6 leading-[1.4] tracking-normal font-inter max-w-xl">Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.</p>
