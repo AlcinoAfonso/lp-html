@@ -32,17 +32,17 @@
 <body>
 
   <!-- ================= HEADER =================== -->
-  <header class="w-screen" style="background: #7A8AD6; color: #333333;">
+  <header class="w-screen" style="background: {{header_cor_fundo}}; color: {{header_cor_texto}};">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] py-4 md:py-6 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-items-start">
       <div>
-        <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="Logo Quantec Portal" class="h-12">
+        <img src="{{header_logo}}" alt="Logo Quantec Portal" class="h-12">
       </div>
       <div class="flex justify-center items-center gap-6">
         <nav class="hidden md:flex gap-6 text-sm">
-          <a href="#etapas" class="scroll-smooth">etapas</a>
-          <a href="#quem_somos" class="scroll-smooth">quem somos</a>
+          <a href="{{header_menu_1_link}}" class="scroll-smooth">{{header_menu_1_nome}}</a>
+          <a href="{{header_menu_2_link}}" class="scroll-smooth">{{header_menu_2_nome}}</a>
         </nav>
-        <a href="tel:21979658483" class="hidden md:inline-block text-sm">(21) 97965-8483</a>
+        <a href="tel:{{header_telefone_link}}" class="hidden md:inline-block text-sm">{{header_telefone_exibicao}}</a>
         <button class="md:hidden" id="navToggle" aria-label="Abrir menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
@@ -53,53 +53,55 @@
   </header>
 
   <!-- ================= HERO =================== -->
-  <section id="sec-hero" class="w-screen" style="background: #7A8AD6; color: #333333;">
+  <section id="sec-hero" class="w-screen" style="background: {{hero_cor_fundo}}; color: {{hero_cor_texto}};">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] flex flex-col md:flex-row items-center gap-12 md:gap-16 py-12 md:py-16">
       <div class="flex-1 min-w-0">
-        <h1 class="text-[2.5rem] font-bold mb-6 leading-[1.2] tracking-tight font-inter text-center md:text-left">Medicina Quântica Segura Com Tecnologia de Ponta</h1>
-        <p class="text-[1.25rem] font-semibold mb-6 leading-[1.4] tracking-normal font-inter max-w-xl text-center md:text-left">Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.</p>
-        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="hidden md:inline-block mt-6 px-8 py-4 rounded-[16px] font-semibold text-base" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
+        <h1 class="text-[2.5rem] font-bold mb-6 leading-[1.2] tracking-tight font-inter text-center md:text-left">{{hero_h1}}</h1>
+        <p class="text-[1.25rem] font-semibold mb-6 leading-[1.4] tracking-normal font-inter max-w-xl text-center md:text-left">{{hero_p}}</p>
+        <a href="https://wa.me/{{hero_whatsapp_numero}}?text={{hero_whatsapp_mensagem_encode}}" class="hidden md:inline-block mt-6 px-8 py-4 rounded-[16px] font-semibold text-base" style="background: {{hero_cor_botao}}; color: {{hero_cor_texto_botao}};">{{hero_botao_whatsapp}}</a>
       </div>
       <div class="flex-1 flex justify-center min-w-0">
-        <img src="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp" alt="Paciente recebendo terapia quântica" class="w-full max-w-md h-auto rounded-lg shadow-md">
+        <img src="{{hero_imagem}}" alt="Paciente recebendo terapia quântica" class="w-full max-w-md h-auto rounded-lg shadow-md">
       </div>
     </div>
     <div class="w-full flex justify-center md:hidden mt-6">
-      <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
+      <a href="https://wa.me/{{hero_whatsapp_numero}}?text={{hero_whatsapp_mensagem_encode}}" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: {{hero_cor_botao}}; color: {{hero_cor_texto_botao}};">{{hero_botao_whatsapp}}</a>
     </div>
   </section>
 
   <!-- ================= BENEFÍCIOS =================== -->
-  <section id="sec-beneficios" class="w-screen" style="background: #F2F2F2; color: #7A8AD6;">
+  <section id="sec-beneficios" class="w-screen" style="background: {{beneficios_cor_fundo}}; color: {{beneficios_cor_texto}};">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] py-12">
-      <h2 class="$1max-w-xl mx-auto md:mx-0$2">Os Benefícios da Energia Quântica no seu dia a dia.</h2>
+      <div class="w-full flex justify-center">
+        <h2 class="text-[2rem] font-bold mb-8 font-inter max-w-xl text-center">{{beneficios_h2}}</h2>
+      </div>
       <div class="flex flex-col md:flex-row gap-8">
         <div class="flex-1 space-y-6">
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🧘‍♀️ Alívio Progressivo do Estresse</h3>
-            <p class="text-base font-normal font-inter">Sinta a diferença no seu ritmo interno. O tratamento busca favorecer um estado de maior equilíbrio e tranquilidade ao longo do tempo.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_1_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_1_p}}</p>
           </div>
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">⚡ Energia Renovada para Seu Dia a Dia</h3>
-            <p class="text-base font-normal font-inter">Muitos relatam melhora gradual na disposição. A terapia energética pode colaborar com o equilíbrio no cotidiano.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_2_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_2_p}}</p>
           </div>
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🧠 Aumento da Clareza Mental</h3>
-            <p class="text-base font-normal font-inter">O reequilíbrio energético pode favorecer estados de maior concentração, contribuindo para decisões mais conscientes no dia a dia.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_3_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_3_p}}</p>
           </div>
         </div>
         <div class="flex-1 space-y-6">
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🛡️ Fortalecimento do Sistema Imunológico</h3>
-            <p class="text-base font-normal font-inter">O equilíbrio energético pode melhorar o funcionamento do organismo. Muitas pessoas relatam bem-estar durante o processo.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_4_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_4_p}}</p>
           </div>
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🌙 Melhora na Qualidade do Sono</h3>
-            <p class="text-base font-normal font-inter">Alguns clientes percebem mudanças positivas no sono, como sensação de descanso mais profundo e regular.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_5_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_5_p}}</p>
           </div>
           <div>
-            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">💖 Harmonia Emocional Duradoura</h3>
-            <p class="text-base font-normal font-inter">O tratamento atua de forma sutil no campo emocional, podendo favorecer estabilidade interna e maior percepção de equilíbrio ao longo do tempo.</p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">{{beneficios_6_h3}}</h3>
+            <p class="text-base font-normal font-inter">{{beneficios_6_p}}</p>
           </div>
         </div>
       </div>
