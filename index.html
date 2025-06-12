@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title></title>
-  <meta name="description" content="">
-  <link rel="icon" href="" sizes="32x32">
+  <title>Quantec Portal</title>
+  <meta name="description" content="Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.">
+  <link rel="icon" href="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" sizes="32x32">
 
   <!-- Tailwind v3 CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
 
   <style>
-    :root {
-      --largura-pagina: clamp(20rem, 100vw, 75rem);
+    :root{
+      --largura-pagina: 75rem;
       --fonte-principal: 'Inter', sans-serif;
       --tamanho-base: 1rem;
       --padding-lateral-mobile: 1rem;
       --padding-lateral-md: 1.5rem;
     }
-    body {
+    body{
       width: 100%;
       max-width: var(--largura-pagina);
       margin: 0 auto;
@@ -34,17 +34,17 @@
   <header class="w-screen" style="background:#7A8AD6; color:#333333;">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] pt-8 pb-4 md:py-6 grid grid-cols-1 md:grid-cols-2 items-center justify-items-center md:justify-items-start">
       <div>
-        <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="" class="h-12">
+        <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="Logo Quantec Portal" class="h-12">
       </div>
       <div class="flex justify-center items-center gap-6">
         <nav class="hidden md:flex gap-6 text-sm">
           <a href="#etapas" class="scroll-smooth">etapas</a>
           <a href="#quem_somos" class="scroll-smooth">quem somos</a>
         </nav>
-        <a href="21979658483" class="hidden md:inline-block text-sm">(21) 97965-8483</a>
+        <a href="tel:21979658483" class="hidden md:inline-block text-sm">(21) 97965-8483</a>
         <button class="md:hidden" id="navToggle" aria-label="Abrir menu">
           <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
           </svg>
         </button>
       </div>
@@ -55,21 +55,15 @@
   <section id="sec-hero" class="w-screen" style="background:#7A8AD6; color:#333333;">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] flex flex-col md:flex-row items-center gap-12 md:gap-16 pt-12 pb-16 md:py-16">
       <div class="flex-1 min-w-0">
-        <h1 class="text-[2.5rem] font-bold leading-[1.2] tracking-tight font-inter text-center md:text-left">
-          Medicina Quântica Segura Com Tecnologia de Ponta
-        </h1>
-        <p class="text-[1.25rem] font-semibold leading-[1.4] tracking-normal font-inter max-w-xl text-center md:text-left mb-4">
-          Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.
-        </p>
-        <a href="" class="hidden md:inline-block mt-6 px-8 py-4 rounded-[16px] font-semibold text-base hover:bg-brand-dark transition">
-          Entenda os Benefícios
-        </a>
-        <a href="" class="block md:hidden mt-6 px-8 py-4 rounded-[16px] font-semibold text-base hover:bg-brand-dark transition">
-          Entenda os Benefícios
-        </a>
+        <h1 class="text-[2.5rem] font-bold mb-6 leading-[1.2] tracking-tight font-inter text-center md:text-left">Medicina Quântica Segura Com Tecnologia de Ponta</h1>
+        <p class="text-[1.25rem] font-semibold mb-6 leading-[1.4] tracking-normal font-inter max-w-xl text-center md:text-left">Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.</p>
+        <!-- Desktop button -->
+        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="hidden md:inline-block mt-6 px-8 py-4 rounded-[16px] font-semibold text-base" style="background:#FF6600; color:#333333;">Entenda os Benefícios</a>
+        <!-- Mobile button inside first container -->
+        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="block md:hidden mt-6 px-8 py-4 rounded-[16px] font-semibold text-base" style="background:#FF6600; color:#333333;">Entenda os Benefícios</a>
       </div>
       <div class="flex-1 flex justify-center min-w-0">
-        <img src="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp" alt="" class="w-full max-w-md h-auto rounded-lg shadow-md">
+        <img src="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp" alt="Imagem hero" class="w-full max-w-md h-auto rounded-lg shadow-md">
       </div>
     </div>
   </section>
@@ -77,54 +71,58 @@
   <!-- ================= BENEFÍCIOS =================== -->
   <section id="sec-beneficios" class="w-screen" style="background:#F2F2F2; color:#7A8AD6;">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] py-12">
-      <div class="flex justify-center w-full">
-        <h2 class="text-[2rem] font-bold leading-[1.2] tracking-tight font-inter mb-4">
-          Os Benefícios da Energia Quântica no seu dia a dia.
-        </h2>
+      <div class="w-full flex justify-center">
+        <h2 class="text-[2rem] font-bold mb-8 font-inter max-w-xl text-center">Os Benefícios da Energia Quântica no seu dia a dia.</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-8">
         <div class="flex-1 space-y-6">
           <div>
-            <h3 class="text-[1.25rem] font-semibold leading-[1.4] tracking-normal font-inter mt-4 mb-2">
-              🧘‍♀️ Alívio Progressivo do Estresse
-            </h3>
-            <p class="text-base font-normal leading-[1.5] tracking-normal font-inter mb-4">
-              Sinta a diferença no seu ritmo interno. O tratamento busca favorecer um estado de maior equilíbrio e tranquilidade ao longo do tempo.
-            </p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🧘‍♀️ Alívio Progressivo do Estresse</h3>
+            <p class="text-base font-normal font-inter">Sinta a diferença no seu ritmo interno. O tratamento busca favorecer um estado de maior equilíbrio e tranquilidade ao longo do tempo.</p>
           </div>
-          <!-- repetir para benefício 2 e 3 -->
+          <div>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">⚡ Energia Renovada para Seu Dia a Dia</h3>
+            <p class="text-base font-normal font-inter">Muitos relatam melhora gradual na disposição. A terapia energética pode colaborar com o equilíbrio no cotidiano.</p>
+          </div>
+          <div>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🧠 Aumento da Clareza Mental</h3>
+            <p class="text-base font-normal font-inter">O reequilíbrio energético pode favorecer estados de maior concentração, contribuindo para decisões mais conscientes no dia a dia.</p>
+          </div>
         </div>
         <div class="flex-1 space-y-6">
           <div>
-            <h3 class="text-[1.25rem] font-semibold leading-[1.4] tracking-normal font-inter mt-4 mb-2">
-              🌙 Melhora na Qualidade do Sono
-            </h3>
-            <p class="text-base font-normal leading-[1.5] tracking-normal font-inter mb-4">
-              Alguns clientes percebem mudanças positivas no sono, como sensação de descanso mais profundo e regular.
-            </p>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🛡️ Fortalecimento do Sistema Imunológico</h3>
+            <p class="text-base font-normal font-inter">O equilíbrio energético pode melhorar o funcionamento do organismo. Muitas pessoas relatam bem-estar durante o processo.</p>
           </div>
-          <!-- repetir para benefício 5 e 6 -->
+          <div>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🌙 Melhora na Qualidade do Sono</h3>
+            <p class="text-base font-normal font-inter">Alguns clientes percebem mudanças positivas no sono, como sensação de descanso mais profundo e regular.</p>
+          </div>
+          <div>
+            <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">💖 Harmonia Emocional Duradoura</h3>
+            <p class="text-base font-normal font-inter">O tratamento atua de forma sutil no campo emocional, podendo favorecer estabilidade interna e maior percepção de equilíbrio ao longo do tempo.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ================= DEPOIMENTOS =================== -->
-  <section id="sec-depoimentos" class="w-screen" style="background:#F3F3F3; color:#15113F;">
+  <section id="sec-depoimentos" class="w-screen" style="background:#F2F2F2; color:#15113F;">
     <div class="max-w-[var(--largura-pagina)] mx-auto px-[var(--padding-lateral-mobile)] md:px-[var(--padding-lateral-md)] py-12">
-      <div class="flex justify-center w-full">
-        <h2 class="text-[2rem] font-bold leading-[1.2] tracking-tight font-inter mb-4">
-          Alguns de nossos depoimentos
-        </h2>
+      <div class="w-full flex justify-center">
+        <h2 class="text-[2rem] font-bold mb-8 font-inter max-w-xl text-center">Alguns de nossos depoimentos</h2>
       </div>
       <div class="w-full flex gap-6 overflow-x-auto snap-x">
         <iframe src="https://www.youtube.com/embed/8AIcDOsxS7Q" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
-        <!-- repetir para demais depoimentos -->
+        <iframe src="https://www.youtube.com/embed/Mwr6JtFcwtY" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/yZqOZxGUwO4" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/eEtyHvQv0Ww" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/IjwyGMuvpnE" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
+        <iframe src="https://www.youtube.com/embed/75CPBU8uZEE" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
       </div>
-      <div class="flex justify-center w-full mt-8">
-        <a href="" class="px-8 py-4 rounded-[16px] font-semibold text-base hover:bg-brand-dark transition">
-          Entenda os Benefícios
-        </a>
+      <div class="w-full flex justify-center mt-8">
+        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background:#FF6600; color:#333333;">Entenda os Benefícios</a>
       </div>
     </div>
   </section>
