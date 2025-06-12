@@ -28,6 +28,7 @@
 <body>
 
   <!-- ================= HEADER =================== -->
+  <!-- {{IF_HEADER}} -->
   <header class="w-screen" style="background: #7A8AD6; color: #333333;">
     <div class="max-w-[var(--largura-pagina)] mx-auto py-4 px-4 md:px-6">
       <div class="flex justify-between items-center">
@@ -44,8 +45,10 @@
       </div>
     </div>
   </header>
+  <!-- {{END_HEADER}} -->
 
   <!-- ================= HERO =================== -->
+  <!-- {{IF_HERO}} -->
   <section id="sec-hero" class="w-screen" style="background: #7A8AD6; color: #333333;">
     <div class="max-w-[var(--largura-pagina)] mx-auto flex flex-col md:flex-row items-center gap-8 py-8 px-4 md:px-6">
       <div class="flex-1 space-y-6">
@@ -58,8 +61,58 @@
       </div>
     </div>
   </section>
+  <!-- {{END_HERO}} -->
+
+  <!-- ================= ETAPAS =================== -->
+  <!-- {{IF_ETAPAS}} -->
+  <section id="sec-etapas" class="w-screen" style="background: #FFFFFF; color: #333333;">
+    <div class="max-w-[var(--largura-pagina)] mx-auto px-4 md:px-6 py-12">
+      <h2 class="text-[2rem] font-bold text-center mb-8">Etapas do Processo</h2>
+      <div class="flex flex-col md:flex-row gap-8">
+        <!-- Container 1 -->
+        <div class="flex-1 space-y-8">
+          <div class="flex items-start space-x-4">
+            <span class="text-[4rem] font-bold">1</span>
+            <div>
+              <h3 class="text-[1.25rem] font-semibold">Etapa 1: Definição</h3>
+              <p class="text-base">Explicação detalhada do primeiro passo do processo.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <span class="text-[4rem] font-bold">2</span>
+            <div>
+              <h3 class="text-[1.25rem] font-semibold">Etapa 2: Planejamento</h3>
+              <p class="text-base">Descrição do planejamento e preparação necessários.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Container 2 -->
+        <div class="flex-1 space-y-8">
+          <div class="flex items-start space-x-4">
+            <span class="text-[4rem] font-bold">3</span>
+            <div>
+              <h3 class="text-[1.25rem] font-semibold">Etapa 3: Execução</h3>
+              <p class="text-base">Detalhes sobre como a execução das ações será realizada.</p>
+            </div>
+          </div>
+          <div class="flex items-start space-x-4">
+            <span class="text-[4rem] font-bold">4</span>
+            <div>
+              <h3 class="text-[1.25rem] font-semibold">Etapa 4: Avaliação</h3>
+              <p class="text-base">Como serão avaliados os resultados e próximos passos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center mt-12">
+        <a href="#" class="px-8 py-4 rounded-[16px] font-semibold" style="background:#FF6600; color:#333333;">Quero Começar</a>
+      </div>
+    </div>
+  </section>
+  <!-- {{END_ETAPAS}} -->
 
   <!-- ================ BENEFÍCIOS ================= -->
+  <!-- {{IF_BENEFICIOS}} -->
   <section id="sec-beneficios" class="w-screen" style="background: #F2F2F2; color: #7A8AD6;">
     <div class="max-w-[var(--largura-pagina)] mx-auto py-12 px-4 md:px-6">
       <div class="w-full flex justify-center">
@@ -99,8 +152,10 @@
       </div>
     </div>
   </section>
+  <!-- {{END_BENEFICIOS}} -->
 
   <!-- ================ DEPOIMENTOS ================ -->
+  <!-- {{IF_DEPOIMENTOS}} -->
   <section id="sec-depoimentos" class="w-screen" style="background: #F3F3F3; color: #15113F;">
     <div class="max-w-[var(--largura-pagina)] mx-auto py-12 px-4 md:px-6">
       <div class="w-full flex justify-center">
@@ -115,10 +170,11 @@
         <iframe src="https://www.youtube.com/embed/75CPBU8uZEE" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
       </div>
       <div class="w-full flex justify-center mt-8">
-        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
+        <a href="https://wa.me/5521979658483?text=" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: ; color: ;">Entenda os Benefícios</a>
       </div>
     </div>
   </section>
+  <!-- {{END_DEPOIMENTOS}} -->
 
 </body>
 </html>
