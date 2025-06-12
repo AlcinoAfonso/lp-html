@@ -9,7 +9,6 @@
 
   <!-- Tailwind v3 CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
-
   <style>
     :root{
       --largura-pagina: clamp(20rem, 100vw, 75rem);
@@ -17,50 +16,57 @@
       --tamanho-base: 1rem;
     }
     body{
+      width: 100%;
       max-width: var(--largura-pagina);
       margin: 0 auto;
       font-family: var(--fonte-principal);
       font-size: var(--tamanho-base);
+      scroll-behavior: smooth;
     }
   </style>
 </head>
 <body>
 
   <!-- ================= HEADER =================== -->
-  <header class="w-full py-4 px-4 md:px-6" style="background: #7A8AD6; color: #333333;">
-    <div class="flex justify-between items-center">
-      <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="Logo" class="h-12">
-      <nav class="hidden md:flex space-x-4 text-sm">
-        <a href="#etapas" class="scroll-smooth">etapas</a>
-        <a href="#quem_somos" class="scroll-smooth">quem somos</a>
-      </nav>
-      <button class="md:hidden" id="navToggle" aria-label="Abrir menu">
-        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
-        </svg>
-      </button>
+  <header class="w-screen" style="background: #7A8AD6; color: #333333;">
+    <div class="max-w-[var(--largura-pagina)] mx-auto py-4 px-4 md:px-6">
+      <div class="flex justify-between items-center">
+        <img src="https://quantecportal.com/wp-content/uploads/2025/04/logo-angelo-1-1.svg" alt="Logo" class="h-12">
+        <nav class="hidden md:flex space-x-4 text-sm">
+          <a href="#etapas" class="scroll-smooth">etapas</a>
+          <a href="#quem_somos" class="scroll-smooth">quem somos</a>
+        </nav>
+        <button class="md:hidden" id="navToggle" aria-label="Abrir menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+        </button>
+      </div>
     </div>
   </header>
 
   <!-- ================= HERO =================== -->
-  <section id="sec-hero" class="flex flex-col md:flex-row items-center gap-8 py-8 px-4 md:px-6" style="background: #7A8AD6; color: #333333;">
-    <div class="flex-1">
-      <h1 class="text-[2.5rem] font-bold leading-[1.2] tracking-tight font-inter">Medicina Quântica Segura Com Tecnologia de Ponta</h1>
-      <p class="text-[1.25rem] font-semibold leading-[1.4] tracking-normal font-inter max-w-xl mb-4">Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.</p>
-      <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="inline-block text-base font-semibold leading-[1.4] tracking-tight font-inter px-8 py-4 rounded-[16px] hover:opacity-90 transition" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
-    </div>
-    <div class="flex-1">
-      <img src="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp" alt="Imagem hero" class="w-full h-auto rounded-lg">
+  <section id="sec-hero" class="w-screen" style="background: #7A8AD6; color: #333333;">
+    <div class="max-w-[var(--largura-pagina)] mx-auto flex flex-col md:flex-row items-center gap-8 py-8 px-4 md:px-6">
+      <div class="flex-1">
+        <h1 class="text-[2.5rem] font-bold leading-[1.2] tracking-tight font-inter text-center md:text-left">Medicina Quântica Segura Com Tecnologia de Ponta</h1>
+        <p class="text-[1.25rem] font-semibold leading-[1.4] tracking-normal font-inter max-w-xl mb-4 text-center md:text-left">Terapia Quântica não invasiva, reconhecida na Europa e aplicada com precisão por profissional experiente.</p>
+        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="inline-block text-base font-semibold leading-[1.4] tracking-tight font-inter px-8 py-4 rounded-[16px] hover:opacity-90 transition" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
+      </div>
+      <div class="flex-1">
+        <img src="https://quantecportal.com/wp-content/uploads/2025/03/foto-angelo.webp" alt="Imagem hero" class="w-full h-auto rounded-lg">
+      </div>
     </div>
   </section>
 
   <!-- ================ BENEFÍCIOS ================= -->
   <section id="sec-beneficios" class="w-screen" style="background: #F2F2F2; color: #7A8AD6;">
-    <div class="max-w-[var(--largura-pagina)] mx-auto px-4 md:px-6 py-12">
+    <div class="max-w-[var(--largura-pagina)] mx-auto py-12 px-4 md:px-6">
       <div class="w-full flex justify-center">
         <h2 class="text-[2rem] font-bold mb-8 font-inter max-w-xl text-center">Os Benefícios da Energia Quântica no seu dia a dia.</h2>
       </div>
       <div class="flex flex-col md:flex-row gap-8">
+        <!-- Container 1 -->
         <div class="flex-1 space-y-6">
           <div>
             <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🧘‍♀️ Alívio Progressivo do Estresse</h3>
@@ -75,6 +81,7 @@
             <p class="text-base font-normal font-inter">O equilíbrio energético pode melhorar o funcionamento do organismo. Muitas pessoas relatam bem-estar durante o processo.</p>
           </div>
         </div>
+        <!-- Container 2 -->
         <div class="flex-1 space-y-6">
           <div>
             <h3 class="text-[1.25rem] font-semibold mb-2 font-inter">🌙 Melhora na Qualidade do Sono</h3>
@@ -95,7 +102,7 @@
 
   <!-- ================ DEPOIMENTOS ================ -->
   <section id="sec-depoimentos" class="w-screen" style="background: #F3F3F3; color: #15113F;">
-    <div class="max-w-[var(--largura-pagina)] mx-auto px-4 md:px-6 py-12">
+    <div class="max-w-[var(--largura-pagina)] mx-auto py-12 px-4 md:px-6">
       <div class="w-full flex justify-center">
         <h2 class="text-[2rem] font-bold mb-8 font-inter max-w-xl text-center">Alguns de nossos depoimentos</h2>
       </div>
@@ -108,7 +115,7 @@
         <iframe src="https://www.youtube.com/embed/75CPBU8uZEE" class="w-64 aspect-video rounded-lg shadow-md snap-start" allowfullscreen></iframe>
       </div>
       <div class="w-full flex justify-center mt-8">
-        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: ; color: ;">Entenda os Benefícios</a>
+        <a href="https://wa.me/5521979658483?text=Gostaria%20de%20saber%20mais%20sobre%20a%20terapia" class="px-8 py-4 rounded-[16px] font-semibold text-base" style="background: #FF6600; color: #333333;">Entenda os Benefícios</a>
       </div>
     </div>
   </section>
